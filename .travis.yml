@@ -12,3 +12,7 @@ deploy:
     branch: master
   target_branch: build
   local_dir: ./tmp/
+
+notifications:
+  email:
+    - team@gnes.ai
