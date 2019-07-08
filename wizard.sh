@@ -2,7 +2,7 @@
 
 set -e
 
-WIZARD_BUILD=013e55b
+WIZARD_BUILD=7288509
 WIZARD_VERSION=0.1.23
 
 #!/usr/bin/env bash
