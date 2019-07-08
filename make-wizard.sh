@@ -13,11 +13,11 @@ MY_DIR="$(dirname "$0")"
 cd ${MY_DIR}
 
 mkdir "./tmp"
-WIZARD_SH="./tmp/gnes-wizard.sh"
+WIZARD_SH="./tmp/wizard.sh"
 
 printf "#!/usr/bin/env bash
 
-set -ex
+set -e
 
 WIZARD_BUILD=$(git rev-parse --short HEAD)
 WIZARD_VERSION=$(<".version")

@@ -10,5 +10,5 @@ deploy:
   keep_history: true
   on:
     branch: master
-  target_branch: released-wizard
+  target_branch: build
   local_dir: ./tmp/
