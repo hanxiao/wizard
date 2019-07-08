@@ -14,7 +14,6 @@ bash ./gnes-wizard.sh
 bash ./make-wizard.sh
 ```
 
-
-<h2 align="center">License</h2>
+## License
 
 [Apache License 2.0](./LICENSE)
