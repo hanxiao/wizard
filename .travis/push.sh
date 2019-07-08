@@ -12,8 +12,8 @@ commit_generated_wizard() {
 }
 
 upload_files() {
-  git remote add origin https://hanxiao:${GH_TOKEN}@github.com/gnes-ai/wizard > /dev/null 2>&1
-  git push --quiet --set-upstream origin master
+  git remote add origin https://${GH_TOKEN}@github.com/gnes-ai/wizard.git > /dev/null 2>&1
+  git push --set-upstream origin master
 }
 
 setup_git
