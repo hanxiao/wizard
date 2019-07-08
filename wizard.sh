@@ -2,7 +2,7 @@
 
 set -e
 
-WIZARD_BUILD=ba99bdf
+WIZARD_BUILD=013e55b
 WIZARD_VERSION=0.1.23
 
 #!/usr/bin/env bash
@@ -22,7 +22,7 @@ else
   printf 'fallback to shell interface without gui support\n' >&2
   DIALOG_UI="shell"
 fi
-DIALOG_UI="shell"
+
 function join_by { local IFS="$1"; shift; echo "$*"; }
 
 function ui.dialog.show_options() {
