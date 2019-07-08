@@ -12,7 +12,8 @@ MY_DIR="$(dirname "$0")"
 
 cd ${MY_DIR}
 
-WIZARD_SH="./gnes-wizard.sh"
+mkdir "./tmp"
+WIZARD_SH="./tmp/gnes-wizard.sh"
 
 printf "#!/usr/bin/env bash
 

@@ -1,6 +1,14 @@
 script: ./make-wizard.sh
-after_success:
-  - .travis/push.sh
 branches:
   only:
   - master
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
+  target_branch: released-wizard
+  local_dir: ./tmp/

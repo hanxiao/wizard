@@ -7,7 +7,7 @@ setup_git() {
 
 commit_generated_wizard() {
   git checkout master
-  git add .version ./gnes-wizard.sh
+  git add .version .gnes-wizard.sh
   git commit --message "Travis auto build: $TRAVIS_BUILD_NUMBER"
 }
 
