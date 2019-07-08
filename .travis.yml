@@ -1,0 +1,6 @@
+script: ./make-wizard.sh
+after_success:
+  - .travis/push.sh
+branches:
+  only:
+  - master

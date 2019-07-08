@@ -25,11 +25,8 @@ WIZARD_VERSION=$(<".version")
 
 awk -f inrep.awk _wizard_wrapper.sh >> ${WIZARD_SH}
 
-fp=$(transfer ${WIZARD_SH})
-
-printf "script is uploaded to \e[0;32m$fp\e[0m\n"
-
 printf "bumping version from $(<".version") to "
 NEW_VERSION=$(echo $(<".version") | awk -F. -v OFS=. 'NF==1{print ++$NF}; NF>1{$NF=sprintf("%0*d", length($NF), ($NF+1)); print}')
 echo ${NEW_VERSION} > ".version"
 printf "$NEW_VERSION\n"
+
